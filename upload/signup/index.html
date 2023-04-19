@@ -1,0 +1,56 @@
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>결제하기</title>
+  </head>
+  <body>
+    <div class="container sign-up-mode">
+      <div class="forms-container">
+        <div class="signin-signup">
+
+
+          <form name="myform" class="sign-up-form" method="post" onsubmit="return validateform()" >
+            <h2 class="title">등록하기</h2>
+            <div class="input-field">
+
+              <i class="fas fa-user"></i>
+              <input required type="text" placeholder="이름" id="username">
+            </div>
+            <div class="input-field">
+                <i class="fas fa-light fa-mobile"></i>
+              <input required type="tel" placeholder="휴대폰번호" id="phonenumber" pattern="[0-1]{3}[0-9]{4}[0-9]{4}">
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input required type="email" placeholder="이메일" id="email">
+            </div>
+            <div class="input-field">
+                <i class="fas fa-sharp fa-solid fa-building"></i>
+              <input required type="text" placeholder="소속" id="position">
+            </div>
+            <div class="input-field">
+                <i class="fas fa-sharp fa-solid fa-building"></i>
+                <input required type="text" placeholder="직책" id="position">
+            </div>
+            <div class="input-field">
+                <i class="fas"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="50" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                  </svg></i>
+                <input required type="text" placeholder="주소" id="address">
+            </div>
+            <input type="submit" class="btn" value="결제하기" />
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

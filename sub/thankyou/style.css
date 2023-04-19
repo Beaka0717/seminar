@@ -1,0 +1,122 @@
+body{
+    background-color: #000000;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.innerbox{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.check{
+    fill:none;
+    stroke: #007aff;
+    stroke-width: 2px;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-miterlimit:10;
+}
+  
+.check {
+    stroke-dasharray: 60 200;
+    animation-delay: 1.7s;
+    animation: check 2s cubic-bezier(0.67, 0, 0.1, 1) forwards 0.0s; 
+    opacity: 0;
+}
+
+@-webkit-keyframes check {
+    from {stroke-dashoffset: 60;
+opacity: 1;}
+
+    to {stroke-dashoffset: 293;
+    opacity: 1;}
+}
+
+.videoback{
+    max-width: 1920px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    opacity: 0.5;
+}
+.videoback video{
+    width: 100%;
+}
+
+.thankyou{
+    border-radius: 10px;
+    position: fixed;
+    top: 25%;
+    right: 15%;
+    display: block;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    height: initial;
+    max-width: 620px;
+    box-shadow: rgba(35, 130, 255, 0.986) 0px 10px 50px;
+    background-color: #111111;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .thankyou{
+        right: 10%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .thankyou{
+        right: 5%;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .thankyou{
+        max-width: 420px;
+        right: 10%;
+    }
+    .txtsmall{
+        line-height: 2;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .thankyou{
+        max-width: 340px;
+        right: 10%;
+        top: 5%;
+    }
+}
+@media only screen and (max-width: 460px) {
+    .thankyou{
+        max-width: 340px;
+        right: 1%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .thankyou{
+        max-width: 320px;
+        right: 1%;
+        
+    }
+}
+@media only screen and (max-width: 370px) {
+    .thankyou{
+        max-width: 290px;
+        right: 1%;
+        
+    }
+}
+
+.smaller {
+    width: 130px;
+    margin: 50px auto 
+}
+.txt{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 25px;
+    
+}
+.txtsmall{
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
